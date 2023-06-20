@@ -14,23 +14,28 @@
 <body>
     <div class="container">
         <div class="header">
+            <i class="fa-solid fa-bars dl"></i>
             <div class="logo">
                 <img src="indir.png" alt="">
             </div>
-            <div class="navbar">
-                <ul>
-                    <li> <a href="">ANA SAYFA </a></li>
-                    <li> <a href="#about">HAKKIMIZDA </a></li>
-                    <li> <a href="#project">PROJELERİMİZ </a></li>
-                    <li> <a href="#contact">İLETİŞİM </a></li>
+            <div class="navbar ">
+                <div class="list">
+                    <ul class="ull">
+                        <li> <a href="">ANA SAYFA </a></li>
+                        <li> <a href="#about">HAKKIMIZDA </a></li>
+                        <li> <a href="#project">PROJELERİMİZ </a></li>
+                        <li> <a href="#contact">İLETİŞİM </a></li>
 
 
-                </ul>
+                    </ul>
+                </div>
             </div>
             <div class="social-media">
                 <ul>
-                    <li><a href="https://www.instagram.com/zafer_insaat3621/"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
-                    <li><a href="https://tr-tr.facebook.com/people/Zafer-In%C5%9Faat-Emlak-Ofisi/100064901894711/"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
+                    <li><a href="https://www.instagram.com/zafer_insaat3621/"><i
+                                class="fa-brands fa-instagram fa-xl"></i></a></li>
+                    <li><a href="https://tr-tr.facebook.com/people/Zafer-In%C5%9Faat-Emlak-Ofisi/100064901894711/"><i
+                                class="fa-brands fa-facebook fa-xl"></i></a></li>
                 </ul>
             </div>
 
@@ -118,20 +123,22 @@
                     <div class="phone">
                         <h1 style="margin-bottom: 20px; text-align: center;">İLETİŞİM</h1>
                         <p> <i class="fa-sharp fa-solid fa-phone"></i> <b>Telefon Numarası:</b> 0532 566 36 62</p>
-                        <p style="margin-top: 20px;"><i class="fa-solid fa-envelope"></i> <b>E-mail:</b> zaferkardesler36@gmail.com</p>
-                        <p style="margin-top: 20px;"><i class="fa-solid fa-location-dot"></i>  <b>Adress:</b> Yeni, Cumhuriyet Cd. No:26, 36000 Kars Merkez/Kars</p>
+                        <p style="margin-top: 20px;"><i class="fa-solid fa-envelope"></i> <b>E-mail:</b>
+                            zaferkardesler36@gmail.com</p>
+                        <p style="margin-top: 20px;"><i class="fa-solid fa-location-dot"></i> <b>Adress:</b> Yeni,
+                            Cumhuriyet Cd. No:26, 36000 Kars Merkez/Kars</p>
                     </div>
-                    
+
                     <div class="adress">
-                        
-                        <p style="margin-top: 20px;"> 
+
+                        <p style="margin-top: 20px;">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.5508257391434!2d43.09222357585696!3d40.59566912141133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40698f29952a3653%3A0x645b7de6620e38ea!2sZafer%20In%C5%9Faat!5e0!3m2!1str!2str!4v1685985063392!5m2!1str!2str"
-                                width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                                width="800" height="500rem" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </p>
                     </div>
-                   
+
                 </div>
 
 
@@ -178,6 +185,23 @@
                 slides[slideIndex - 1].style.display = "block";
                 dots[slideIndex - 1].className += " active";
             }
+
+
+
+            const bar = document.querySelector(".fa-bars");
+const list = document.querySelector(".list");
+
+bar.addEventListener("click", toggleList);
+
+function toggleList() {
+  list.classList.toggle("activess");
+}
+
+               
+          
+
+
+
 
 
 
